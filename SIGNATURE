@@ -1,0 +1,35 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.35.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 135d30ca7405dc910fd1ffe3fc0336210fb33afd Changes
+SHA1 df644316412b2d72a8a974b29c1fb1d5429363f1 MANIFEST
+SHA1 18ceb06d1d062a8f9e69982eb1979178e75eb3cb META.yml
+SHA1 f2e187d7c18a75e7bebabce0134e393e30b6afac Makefile.PL
+SHA1 1bd27abbe63cdf4280a1a266bb22e0ce086489d1 README
+SHA1 8b4877cb0aae407fcb37a4ac31f2f943bfbe2fe4 inc/Module/Install.pm
+SHA1 019bccc5b2e364447c6e6e150d049ca2a216598e inc/Module/Install/Base.pm
+SHA1 8508e76cf6417588c0118ec85f7d56be15383c00 inc/Module/Install/Makefile.pm
+SHA1 ef550fd641db011c741402b799ace0a446f8d8ec inc/Module/Install/Metadata.pm
+SHA1 09ad99da7d8b2392ae565795c35c87c0c4c580b1 lib/DateTime/Functions.pm
+SHA1 c6b531908434faf4cd9d947e0ad0cc05debd657a t/0-signature.t
+SHA1 30374fe236fb42d52531a96fd9ecd86cb10d7d70 t/1-basic.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.3 (FreeBSD)
+
+iD8DBQE/o0/4tLPdNzw1AaARArw9AJwJ/c76Sp5v4+6HvZ8lw97RZqbp9gCeIzIc
+YNgYndMbMgDWMeChFT/l3do=
+=9UZD
+-----END PGP SIGNATURE-----
