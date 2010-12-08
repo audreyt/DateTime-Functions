@@ -1,15 +1,23 @@
-name: DateTime-Functions
-version: 0.01
-abstract: Procedural interface to DateTime functions
-author: Autrijus Tang (autrijus@autrijus.org)
-license: unknown
+---
+abstract: 'Procedural interface to DateTime functions'
+author:
+  - '唐鳳 <cpan@audreyt.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-requires:
-  DateTime: 0
+generated_by: 'Module::Install version 1.00'
+license: cc0
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: DateTime-Functions
 no_index:
   directory:
     - inc
-private:
-  directory:
-    - inc
-generated_by: Module::Install version 0.27
+    - t
+requires:
+  DateTime: 0
+  perl: 5.6.0
+version: 0.10

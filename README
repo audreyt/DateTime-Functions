@@ -1,27 +1,69 @@
-# $File: //member/autrijus/DateTime-Functions/README $ $Author: autrijus $
-# $Revision: #1 $ $Change: 8643 $ $DateTime: 2003/11/01 06:14:05 $
+NAME
+    DateTime::Functions - Procedural interface to DateTime functions
 
-This is the README file for DateTime::Functions, a procedural interface
-to DateTime functions.
+VERSION
+    This document describes version 0.10 of DateTime::Functions, released
+    December 9, 2010
 
-Please type "perldoc DateTime::Functions" after installation to see
-the module usage information.
+SYNOPSIS
+        use DateTime::Functions;
+        print today->year;
+        print now->strftime("%Y-%m-%d %H:%M:%S");
 
-* Installation
+DESCRIPTION
+    This module simply exports all class methods of DateTime into the
+    caller's namespace.
 
-DateTime::Functions uses the standard perl module install process:
+METHODS
+    Unless otherwise noted, all methods correspond to the same-named class
+    method in DateTime. Please see DateTime for which parameters are
+    supported.
 
-cpansign -v		# see SIGNATURE for details
-perl Makefile.PL
-make			# or 'nmake' on Win32
-make test
-make install
+  Constructors
+    All constructors can die when invalid parameters are given. They all
+    return "DateTime" objects, except for "duration()" which returns a
+    "DateTime::Duration" object.
 
-* Copyright
+    *   datetime( ... )
 
-Copyright 2003 by Autrijus Tang <autrijus@autrijus.org>.
+        Equivalent to "DateTime->new( ... )".
 
-All rights reserved.  You can redistribute and/or modify
-this bundle under the same terms as Perl itself.
+    *   duration( ... )
 
-See <http://www.perl.com/perl/misc/Artistic.html>.
+        Equivalent to "DateTime::Duration->new( ... )".
+
+    *   from_epoch( epoch => $epoch, ... )
+
+    *   now( ... )
+
+    *   today( ... )
+
+    *   from_object( object => $object, ... )
+
+    *   last_day_of_month( ... )
+
+    *   from_day_of_year( ... )
+
+  Utility Functions
+    *   default_locale( $locale )
+
+        Equivalent to "DateTime->DefaultLocale( $locale )".
+
+    *   compare
+
+    *   compare_ignore_floating
+
+SEE ALSO
+    DateTime
+
+AUTHORS
+    唐鳳 <cpan@audreyt.org>
+
+CC0 1.0 Universal
+    To the extent possible under law, 唐鳳 has waived all copyright and
+    related or neighboring rights to DateTime-Functions.
+
+    This work is published from Taiwan.
+
+    <http://creativecommons.org/publicdomain/zero/1.0>
+

@@ -1,13 +1,13 @@
-# $File: //member/autrijus/DateTime-Functions/lib/DateTime/Functions.pm $ $Author: autrijus $
-# $Revision: #1 $ $Change: 8643 $ $DateTime: 2003/11/01 06:14:05 $
-
 package DateTime::Functions;
-$DateTime::Functions::VERSION = '0.01';
 
+use 5.006;
 use strict;
 use base 'Exporter';
-use vars '@EXPORT';
-use DateTime;
+use vars qw( @EXPORT $VERSION );
+
+$VERSION = '0.10';
+
+use DateTime ();
 use Exporter;
 
 @EXPORT = qw(
@@ -16,14 +16,16 @@ use Exporter;
     compare compare_ignore_floating duration
 );
 
+=encoding utf8
+
 =head1 NAME
 
 DateTime::Functions - Procedural interface to DateTime functions
 
 =head1 VERSION
 
-This document describes version 0.01 of DateTime::Functions, released
-October 31, 2003.
+This document describes version 0.10 of DateTime::Functions, released
+December 9, 2010
 
 =head1 SYNOPSIS
 
@@ -110,15 +112,15 @@ L<DateTime>
 
 =head1 AUTHORS
 
-Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>
+唐鳳 E<lt>cpan@audreyt.orgE<gt>
 
-=head1 COPYRIGHT
+=head1 CC0 1.0 Universal
 
-Copyright 2003 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
+To the extent possible under law, 唐鳳 has waived all copyright and related
+or neighboring rights to DateTime-Functions.
 
-This program is free software; you can redistribute it and/or 
-modify it under the same terms as Perl itself.
+This work is published from Taiwan.
 
-See L<http://www.perl.com/perl/misc/Artistic.html>
+L<http://creativecommons.org/publicdomain/zero/1.0>
 
 =cut
